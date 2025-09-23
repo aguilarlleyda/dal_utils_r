@@ -22,9 +22,6 @@
 #' df$signif <- create_significance_label(df$p)
 #' df
 #'
-#' # Directly on a vector
-#' create_significance_label(c(0.001, 0.04, 0.2))
-#'
 #' @export
 create_significance_label <- Vectorize(function(p) {
   if (p < 0.001) {
